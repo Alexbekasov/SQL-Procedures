@@ -104,9 +104,16 @@ VALUES(
 CALL lisauudis ('windows 11', '2025-02-06', 'õpetaja Pant', 'w11 ei tööta multimeedias');
 
 
-
+----------------
 BEGIN
 Select * from uudised;
 Delete from uudised where uudisID=@id;
 Select * from uudised;
+END;
+----------------
+BEGIN
+SELECT * FROM uudised;
+UPDATE uudised SET kirjeldus=@uusKirjeldus
+WHERE kirjeldus Like'puudub';-- vvodit tam gde opisanie otsuvstvujet
+SELECT * FROM uudised;
 END;
