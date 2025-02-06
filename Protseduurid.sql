@@ -99,3 +99,6 @@ INSERT INTO uudised(
 uudiseTeema, kuupaev, autor, kirjeldus)
 VALUES(
 'udune ilm', '2025-02-06', 'postinees', 'Tana on ebahuvitav ilm');
+
+
+CALL lisauudis ('windows 11', '2025-02-06', 'õpetaja Pant', 'w11 ei tööta multimeedias');
