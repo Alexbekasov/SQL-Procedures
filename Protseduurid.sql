@@ -86,3 +86,16 @@ WHERE uudiseTeema LIKE @taht +'%'; -- budet iskatj tolko sostojashih iz odnoj bu
 END;
 --kutse
 EXEC otsingUudiseTeema 'w';
+
+---------Xampp/localhost
+CREATE TABLE uudised(
+uudisID int PRIMARY KEY AUTO_INCREMENT,
+uudiseTeema varchar(50),
+kuupaev date,
+autor varchar(25),
+kirjeldus text
+);
+INSERT INTO uudised(
+uudiseTeema, kuupaev, autor, kirjeldus)
+VALUES(
+'udune ilm', '2025-02-06', 'postinees', 'Tana on ebahuvitav ilm');
