@@ -117,3 +117,8 @@ UPDATE uudised SET kirjeldus=@uusKirjeldus
 WHERE kirjeldus Like'puudub';-- vvodit tam gde opisanie otsuvstvujet
 SELECT * FROM uudised;
 END;
+----------------
+BEGIN
+SELECT * FROM uudised
+WHERE uudiseTeema LIKE CONCAT (taht, '%'); 
+END
