@@ -102,3 +102,11 @@ VALUES(
 
 
 CALL lisauudis ('windows 11', '2025-02-06', 'õpetaja Pant', 'w11 ei tööta multimeedias');
+
+
+
+BEGIN
+Select * from uudised;
+Delete from uudised where uudisID=@id;
+Select * from uudised;
+END;
